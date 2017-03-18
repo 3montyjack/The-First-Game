@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8B4490BD-C575-A68E-A27B-3F7C4FDEDC02}</ProjectGuid>
+    <ProjectGuid>{CDA4F2C8-4A3D-6486-11CE-664A0886CB32}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,10 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\General\EnemyCode.cs" />
+     <Compile Include="Assets\General\Inventory.cs" />
+     <Compile Include="Assets\General\Item.cs" />
+     <Compile Include="Assets\General\ItemList.cs" />
      <Compile Include="Assets\Movement.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>Z:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Overworld\Overworld.cs" />
+     <Compile Include="Assets\Player\PlayerClass.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>Z:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -64,9 +67,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>Z:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>Z:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>Z:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>

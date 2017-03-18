@@ -8,10 +8,14 @@ public class Inventory {
 
     Dictionary<Item, int> inv;
     private ItemList list;
+    private Item currentWeapon;
+    private Item currentArmor;
 
     public Inventory () {
         inv = new Dictionary<Item, int>();
         list = new ItemList();
+        currentWeapon = list.getItemByName("none");
+        currentArmor = list.getItemByName("none");
     }
 
     public void addItemByName(string input)
@@ -23,6 +27,41 @@ public class Inventory {
     {
         return list.getItemByName(input);
     }
+
+    public Item getCurrentWepon()
+    {
+        return currentWeapon;
+    }
+
+    public bool setCurrentWeapon(string name)
+    {
+        bool flag = false;
+        Item item = list.getItemByName(name);
+        if (inv.ContainsKey(item))
+        {
+            currentWeapon = item;
+            flag = true;
+        }
+        return flag;
+    }
+
+    public Item getCurrentArmor()
+    {
+        return currentArmor;
+    }
+
+    public bool setCurrentArmor(string name)
+    {
+        bool flag = false;
+        Item item = list.getItemByName(name);
+        if (inv.ContainsKey(item))
+        {
+            currentArmor = item;
+            flag = true;
+        }
+        return flag;
+    }
+
 
 
 

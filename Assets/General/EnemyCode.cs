@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class EnemyCode : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    private int health;
+    private int damage;
+    private string type;
+
+
+	public EnemyCode(int health, int damage, string type)
+    {
+        this.health = health;
+        this.damage = damage;
+        this.type = type;
+    }
+
+
 }

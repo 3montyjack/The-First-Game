@@ -20,7 +20,7 @@ public class ItemList {
         list.Add(new Item("dagger", 10, 3, "weapon", "A small dagger. There is an engraving on the handle in\n"
                 + " a language you don't recognize.", true));
         list.Add(new Item("crate", 150, 0, "storage", "A sealed wooden box. What do goblins have to store?", false));
-
+        list.Add(new Item("none", 0, 0, "none", "Your hand", true));
 
     }
 
@@ -28,6 +28,7 @@ public class ItemList {
 
     public Item getItemByName(string input)
     {
+        input = input.ToLower();
         Item item = null;
         foreach (Item current in list)
         {
